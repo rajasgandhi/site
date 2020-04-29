@@ -2,6 +2,7 @@ import React from 'react';
 
 function Contact() {
     return(
+        <div>
         <form name="contactform" id="contactform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfl3oATjFuPlKl_yuFO92tE94OCSs3Wew76xqXK43GceN467Q/formResponse?" target="hideen_iframe" onsubmit="submitted=true;">
     <p>
       <label>First Name:<br />
@@ -41,10 +42,11 @@ function Contact() {
     <script type="text/javascript">var submitted=false;</script>
     <script type="text/javascript">
       $('#contactform').on('submit', function(e) {
-        $('#contactform *').fadeOut(2000);
+        $('#contactform *').fadeOut(2000)};
         $('#contactform').prepend('Your submission has been processed...');
       });
     </script>
+    </div>
     );
 }
 
