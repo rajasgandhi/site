@@ -163,7 +163,7 @@ function Home() {
 									Feel free to contact me if you are looking for project help and you think I could<br />
 									help you. Contact info is listed below.</p>
 									<p>Or press the button below.</p>
-									<button onclick="location.href='/contact-form'">Contact Me</button>
+									<button onclick="location.href='/contact'">Contact Me</button>
 								</header>
 							</section>
 
