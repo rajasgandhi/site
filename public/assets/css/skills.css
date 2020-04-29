@@ -1,0 +1,57 @@
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #a2a9b3; 
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-right:25px;
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #bac2cf;}
+.css {width: 65%; background-color: #bac2cf;}
+.js {width: 80%; background-color: #bac2cf;}
+.java {width: 85%; background-color: #bac2cf;}
+.as {width:90%; background-color:#bac2cf} 
+.py {width:70%; background-color:#bac2cf} 
+
+a > .bounce {
+color: white; text-decoration: none;
+}
+.fa-arrow-down:link {
+  text-decoration:none;
+}
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+html {
+  height: 100%;
+  
+}
