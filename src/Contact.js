@@ -40,12 +40,7 @@ function Contact() {
     <script src="assets/js/main.js"></script>
 
     <script type="text/javascript">var submitted=false;</script>
-    <script type="text/javascript">
-      $('#contactform').on('submit', function(e) {
-        $('#contactform *').fadeOut(2000)};
-        $('#contactform').prepend('Your submission has been processed...');
-      });
-    </script>
+    
     </div>
     );
 }
