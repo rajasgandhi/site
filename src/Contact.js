@@ -3,7 +3,7 @@ import React from 'react';
 function Contact() {
     return(
         <div>
-        <form name="contactform" id="contactform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfl3oATjFuPlKl_yuFO92tE94OCSs3Wew76xqXK43GceN467Q/formResponse?" target="hideen_iframe" onsubmit="submitted=true;">
+        <form name="contactform" id="contactform" enctype="text/plain" action="" >
     <p>
       <label>First Name:<br />
         <input name="entry.228158447" type="text" id="entry.22815847" size="30" />
