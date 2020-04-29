@@ -1,14 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Home from './Home';
 import Contact from './Contact';
+import {Route, Link} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <Contact />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/contact" component={Contact} />
     </div>
   );
 }
