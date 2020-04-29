@@ -2077,7 +2077,7 @@ input, select, textarea {
 				font-weight: normal;
 				text-transform: none !important;
 			}
-
+ 
 			input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
 				border-radius: 8px;
