@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/skills.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="icon" type="image/png" href="images/favicon.png" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Contact Form</title>
-</head>
+import React from 'react';
 
-<body style="background:white; color:black">
-  <div id="contactformpage"></div>
-<form name="contactform" id="contactform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfl3oATjFuPlKl_yuFO92tE94OCSs3Wew76xqXK43GceN467Q/formResponse?" target="hideen_iframe" onsubmit="submitted=true;">
+function Contact() {
+    return(
+        <form name="contactform" id="contactform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfl3oATjFuPlKl_yuFO92tE94OCSs3Wew76xqXK43GceN467Q/formResponse?" target="hideen_iframe" onsubmit="submitted=true;">
     <p>
       <label>First Name:<br />
         <input name="entry.228158447" type="text" id="entry.22815847" size="30" />
@@ -47,7 +37,7 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <!--<script src="assets/js/email.js"></script>-->
+
     <script type="text/javascript">var submitted=false;</script>
     <script type="text/javascript">
       $('#contactform').on('submit', function(e) {
@@ -55,5 +45,7 @@
         $('#contactform').prepend('Your submission has been processed...');
       });
     </script>
-</body>
-</html>
+    );
+}
+
+export default Contact;
