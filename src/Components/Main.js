@@ -104,7 +104,7 @@ class Main extends Component {
 									Feel free to contact me if you are looking for project help and you think I could<br />
 									help you. Contact info is listed below.</p>
 									<p>Or press the button below.</p>
-									<button><a href="/contact">Contact Me</a></button>
+									<button><a style={{"borderBottom" : "none"}} href="/contact">Contact Me</a></button>
 								</header>
 							</section>
 
