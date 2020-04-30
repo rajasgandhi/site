@@ -3,7 +3,7 @@ import React from 'react';
 function Contact() {
     return(
         <div>
-        <form name="contactform" id="contactform" action="https://hooks.zapier.com/hooks/catch/7397875/or2336l/" type="POST">
+        <form name="contactform" id="contactform">
     <p>
       <label>First Name:<br />
         <input name="firstname" type="text" id="entry.22815847" size="30" required/>
@@ -26,7 +26,7 @@ function Contact() {
     </p>
     <p>
       <label>
-        <input name="button" type="submit" class="submit-button" id="form-submit" value="Submit" />
+        <input name="button" type="submit" className="submit-button" id="form-submit" value="Submit" />
       </label>
     </p>
   </form>

@@ -6,18 +6,38 @@
 		<link rel="stylesheet" href="assets/css/skills.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="icon" type="image/png" href="images/favicon.png" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Contact Form</title>
-</head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Contact Form</title>
+    </head>
 
 <body style="background:white; color:black">
   <div id="contact"></div>
-  <script defer src="assets/js/jquery.min.js"></script>
+
+  <noscript>
+    You need JavaScript enabled to view this website. Please turn it on.
+  </noscript>
+
   <script defer src="assets/js/jquery.scrollex.min.js"></script>
   <script defer src="assets/js/jquery.scrolly.min.js"></script>
   <script defer src="assets/js/browser.min.js"></script>
   <script defer src="assets/js/breakpoints.min.js"></script>
   <script defer src="assets/js/util.js"></script>
   <script defer src="assets/js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    // POST form data to zapier on submit
+    $("#contactform").submit(function(e) {
+      e.preventDefault();
+      $.ajax({
+        url: "https://hooks.zapier.com/hooks/catch/7397875/or2336l/",
+        type: "post",
+        data: $("#contactform").serialize(),
+        success: function() {
+          // Redirect to another success page
+          window.location = "http://google.com";
+        }
+      });
+    });
+  </script>
 </body>
 </html>

@@ -10,7 +10,7 @@ class Main extends Component {
 										<header className="major">
 											<h2>About Me</h2>
 										</header>
-										<p>I am a student in Aurora Illinois, interested in computer science and using it to help better the world.</p>
+										<p>I am a student in Aurora Illinois, interested in computer science and using it to help better the world. You can find out more about what I have done below.</p>
 
 									</div>
 									<span className="image"><img src={me} alt="me" /></span>
