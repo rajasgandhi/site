@@ -96,19 +96,11 @@ function Home() {
 								  <div class="skills as">90%</div>
 								</div>
 
-								 
-								 
-
 
 								<p style={{"marginBottom" : "6px"}}>HTML</p>
 								<div class="container">
 								  <div class="skills html">90%</div>
 								</div>
-
-								 
-								 
-
-
 
 								<p style={{"marginBottom" : "6px"}}>Java</p>
 								<div class="container">
@@ -117,40 +109,20 @@ function Home() {
 
 								 
 								 
-
-
 								<p style={{"marginBottom" : "6px"}}>JavaScript</p>
 								<div class="container">
 								  <div class="skills js">80%</div>
 								</div>
-
-								<br> </br>
-								 
-
-
-
 
 								<p style={{"marginBottom" : "6px"}}>Python</p>
 								<div class="container">
 								  <div class="skills py">70%</div>
 								</div>
 
-								 
-								 
-
-
 								<p style={{"marginBottom" : "6px"}}>CSS</p>
 								<div class="container">
 								  <div class="skills css">65%</div>
 								</div>
-
-								 
-								 
-
-
-
-
-
 
 
 							</section>
