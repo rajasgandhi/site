@@ -1,4 +1,4 @@
-$(document).ready(function(){
+(function($) {
   // Add smooth scrolling to all links
   $(".fa-arrow-down").on('click', function(event) {
 
