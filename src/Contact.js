@@ -6,22 +6,22 @@ function Contact() {
         <form name="contactform" id="contactform" action="https://hooks.zapier.com/hooks/catch/7397875/or2336l/" type="POST">
     <p>
       <label>First Name:<br />
-        <input name="firstname" type="text" id="entry.22815847" size="30" />
+        <input name="firstname" type="text" id="entry.22815847" size="30" required/>
       </label>
     </p>
     <p>
       <label>Last Name:<br />
-        <input name="lastname" type="text" id="entry.2098725634" size="30" />
+        <input name="lastname" type="text" id="entry.2098725634" size="30" required/>
       </label>
     </p>
     <p>
       <label>Email:<br />
-        <input name="email" type="text" id="entry.546969202" size="48" />
+        <input name="email" type="text" id="entry.546969202" size="48" required/>
       </label>
     </p>
     <p>
       <label>Message:<br />
-        <textarea name="message" id="entry.82328721" cols="50" rows="7"></textarea>
+        <textarea name="message" id="entry.82328721" cols="50" rows="7" required></textarea>
       </label>
     </p>
     <p>
