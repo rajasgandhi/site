@@ -7,16 +7,16 @@ function Home() {
 			<div id="wrapper">
 
 				
-					<header id="header" class="alt" style="height:100vh;">
+					<header id="header" class="alt" style={{"height": "100vh"}}>
 						<span class="logo"><img src="images/logo.png" alt="Logo" /></span>
 						
-						<h1 style="margin-top:5vh">I am
+						<h1 style={{"marginTop" : "5vh"}}>I am
   <span
      class="txt-rotate"
      data-period="500"
      data-rotate='[ "just a kid.", "a developer.", "a creator.", "a tinkerer.", "a maker." ]'></span>
 </h1>
-						<div style="border-bottom:none;" class="arrow bounce"><a style="border-bottom:none" class="fa fa-arrow-down fa-3x" href="#intro"></a></div>
+						<div style={{"borderBottom" : "none"}} class="arrow bounce"><a style={{"borderBottom" : "none"}} class="fa fa-arrow-down fa-3x" href="#intro"></a></div>
 
 
 					</header>
@@ -91,61 +91,61 @@ function Home() {
 								</header>
 
 
-								<p style="margin-bottom:6px">Android Studio</p>
+								<p style={{"marginBottom" : "6px"}}>Android Studio</p>
 								<div class="container">
 								  <div class="skills as">90%</div>
 								</div>
 
-								<br></br>
-								<br></br>
+								 
+								 
 
 
-								<p style="margin-bottom:6px">HTML</p>
+								<p style={{"marginBottom" : "6px"}}>HTML</p>
 								<div class="container">
 								  <div class="skills html">90%</div>
 								</div>
 
-								<br></br>
-								<br></br>
+								 
+								 
 
 
 
-								<p style="margin-bottom:6px">Java</p>
+								<p style={{"marginBottom" : "6px"}}>Java</p>
 								<div class="container">
 								  <div class="skills java">85%</div>
 								</div>
 
-								<br></br>
-								<br></br>
+								 
+								 
 
 
-								<p style="margin-bottom:6px">JavaScript</p>
+								<p style={{"marginBottom" : "6px"}}>JavaScript</p>
 								<div class="container">
 								  <div class="skills js">80%</div>
 								</div>
 
 								<br> </br>
-								<br></br>
+								 
 
 
 
 
-								<p style="margin-bottom:6px">Python</p>
+								<p style={{"marginBottom" : "6px"}}>Python</p>
 								<div class="container">
 								  <div class="skills py">70%</div>
 								</div>
 
-								<br></br>
-								<br></br>
+								 
+								 
 
 
-								<p style="margin-bottom:6px">CSS</p>
+								<p style={{"marginBottom" : "6px"}}>CSS</p>
 								<div class="container">
 								  <div class="skills css">65%</div>
 								</div>
 
-								<br></br>
-								<br></br>
+								 
+								 
 
 
 
