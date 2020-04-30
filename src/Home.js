@@ -169,9 +169,7 @@ function Home() {
 			</div>
 
 		
-			<Script defer src="./assets/js/jquery.min.js"/>
-			<Script defer src="./assets/js/jquery.scrollex.min.js"/>
-			<Script defer src="./assets/js/jquery.scrolly.min.js"/>
+			
 			<Script defer src="./assets/js/browser.min.js"/>
 			<Script defer src="./assets/js/breakpoints.min.js"/>
 			<Script defer src="./assets/js/util.js"/>
