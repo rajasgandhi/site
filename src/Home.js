@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from './images/logo.png'
 import me from './images/me.png'
+import Script from '@gumgum/react-script-tag';
 
 function Home() {
     return(
@@ -46,7 +47,7 @@ function Home() {
 										<p>I am a student in Aurora Illinois, interested in computer science and using it to help better the world.</p>
 
 									</div>
-									<span class="image"><img src={me} alt="" /></span>
+									<span class="image"><img src={me} alt="me" /></span>
 								</div>
 							</section>
 
@@ -168,15 +169,15 @@ function Home() {
 			</div>
 
 		
-			<script src="./assets/js/jquery.min.js"></script>
-			<script src="./assets/js/jquery.scrollex.min.js"></script>
-			<script src="./assets/js/jquery.scrolly.min.js"></script>
-			<script src="./assets/js/browser.min.js"></script>
-			<script src="./assets/js/breakpoints.min.js"></script>
-			<script src="./assets/js/util.js"></script>
-			<script src="./assets/js/main.js"></script>
-			<script src="./assets/js/scroll.js"></script>
-			<script src="./assets/js/typedtext.js"></script>
+			<Script src="./assets/js/jquery.min.js"/>
+			<Script src="./assets/js/jquery.scrollex.min.js"/>
+			<Script src="./assets/js/jquery.scrolly.min.js"/>
+			<Script src="./assets/js/browser.min.js"/>
+			<Script src="./assets/js/breakpoints.min.js"/>
+			<Script src="./assets/js/util.js"/>
+			<Script src="./assets/js/main.js"/>
+			<Script src="./assets/js/scroll.js"/>
+			<Script src="./assets/js/typedtext.js"/>
         </div>
     
     )
