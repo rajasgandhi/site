@@ -5,7 +5,7 @@ class Header extends Component {
     render() {
         return (
             <header id="header" style={{"height": "100vh"}}>
-						<span className="logo"><img src={logo} alt="Logo" /></span>
+                        <span className="logo" ><img style={{"marginTop" : "20vh"}} src={logo} alt="Logo" width="900px"/></span>
 
 						<h1 style={{"marginTop" : "5vh"}}>I am
                         <span className="txt-rotate" data-period="500" data-rotate='[ " just a kid.", " a developer.", " a creator.", " a tinkerer.", " a maker." ]'></span>
