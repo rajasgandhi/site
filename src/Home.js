@@ -1,4 +1,6 @@
 import React from 'react'
+import logo from './images/logo.png'
+import me from './images/me.png'
 
 function Home() {
     return(
@@ -8,7 +10,7 @@ function Home() {
 
 				
 					<header id="header" class="alt" style={{"height": "100vh"}}>
-						<span class="logo"><img src="images/logo.png" alt="Logo" /></span>
+						<span class="logo"><img src={logo} alt="Logo" /></span>
 						
 						<h1 style={{"marginTop" : "5vh"}}>I am
   <span
@@ -44,7 +46,7 @@ function Home() {
 										<p>I am a student in Aurora Illinois, interested in computer science and using it to help better the world.</p>
 
 									</div>
-									<span class="image"><img src="images/me.png" alt="" /></span>
+									<span class="image"><img src={me} alt="" /></span>
 								</div>
 							</section>
 
