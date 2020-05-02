@@ -48,6 +48,11 @@ class Main extends Component {
 										<h3>Hackathon</h3>
 										<p>I attended a hackathon, <a href="https://windyhacks.com" target="top">Windy City Hacks</a>, in 2019. At this hackathon, although I didn't win anything, I learned many valuable lessons from many industry-leading experts that I have used in other projects of mine.</p>
 									</li>
+									<li>
+										<span className="icon major style5 fa-dsf"></span>
+										<h3>Gradescraper</h3>
+										<p>I recently made a program in python and deployed it via Flask to the web that when I login to the site, it would scrape my grades in school and display them. You can see this project <a href="https://www.gradescraper.herokuapp.com">here</a>.</p>
+									</li>
 								</ul>
 
 							</section>
