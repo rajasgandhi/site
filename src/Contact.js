@@ -4,6 +4,7 @@ import Header from './Components/Header';
 function Contact() {
     return(
         <div>
+          <div id="wrapper">
           <Header />
         <form name="contactform" id="contactform">
     <p>
@@ -32,6 +33,7 @@ function Contact() {
       </label>
     </p>
   </form>
+    </div>
     </div>
     );
 }
