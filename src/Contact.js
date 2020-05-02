@@ -1,11 +1,8 @@
 import React from 'react';
-import Header from './Components/Header';
 
 function Contact() {
     return(
         <div>
-          <div id="wrapper">
-          <Header />
         <form name="contactform" id="contactform">
     <p>
       <label>First Name:<br />
@@ -19,7 +16,7 @@ function Contact() {
     </p>
     <p>
       <label>Email:<br />
-        <input name="email" type="text" id="entry.546969202" size="48" required/>
+        <input name="email" type="email" id="entry.546969202" size="48" required/>
       </label>
     </p>
     <p>
@@ -33,7 +30,6 @@ function Contact() {
       </label>
     </p>
   </form>
-    </div>
     </div>
     );
 }
