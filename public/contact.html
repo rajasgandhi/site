@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Contact Form | Rajas Gandhi</title>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./assets/css/main.css" />
 		<link rel="stylesheet" href="./assets/css/skills.css" />
 		<noscript><link rel="stylesheet" href="./assets/css/noscript.css" /></noscript>
-		<link rel="icon" type="image/png" href="./images/favicon.png" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Contact Form | Rajas Gandhi</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css"/>
     </head>
 
 <body>
@@ -24,20 +25,5 @@
   <script src="./assets/js/breakpoints.min.js"></script>
   <script src="./assets/js/util.js"></script>
   <script async src="./assets/js/main.js"></script>
-  <script>
-    // POST form data to zapier on submit
-    $("#contactform").submit(function(e) {
-      e.preventDefault();
-      $.ajax({
-        url: "https://hooks.zapier.com/hooks/catch/7397875/or2336l/",
-        type: 'POST',
-        data: $("#contactform").serialize(),
-        success: function() {
-          // Redirect to another success page
-          window.location = "http://google.com";
-        } 
-      });
-    });
-  </script>
 </body>
 </html>

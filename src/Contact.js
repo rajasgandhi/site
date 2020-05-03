@@ -6,6 +6,12 @@ class Contact extends Component {
   constructor(props) {
     super(props);
     this._handleSubmit = this._handleSubmit.bind(this);
+    this._handleClick = this._handleClick.bind(this);
+  }
+
+  _handleClick(e) {
+    e.preventDefault();
+    window.location.href="/";
   }
 
   _handleSubmit(e) {
@@ -17,7 +23,7 @@ class Contact extends Component {
         success: function() {
           // Redirect to another success page
           $("#contactform").slideUp();
-          $("#after").prepend("<p>Sucess! The form has been submitted.</p><br><button><a>Click here to go back</a></button>");
+          $("#after").prepend("<p>Sucess! The form has been submitted.</p><br><button><a onClick={this._handleClick}>Click here to go back</a></button>");
         } 
       })
   }
@@ -46,11 +52,15 @@ class Contact extends Component {
                 <textarea name="message" id="entry.82328721" cols="50" rows="7" required></textarea>
               </label>
             </p>
+            <div id="main">
             <p>
               <label>
-                <input name="button" type="submit" className="submit-button" id="form-submit" value="Submit" />
+                
+                <input name="button" type="submit" className="button" id="submit" value="Submit" />
+                
               </label>
             </p>
+            </div>
           </form>
           <p id="after"></p>
         </div>
