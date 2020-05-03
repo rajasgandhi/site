@@ -112,7 +112,6 @@ class Main extends Component {
 									<button><a style={{"borderBottom" : "none"}} href="/contact">Contact Me</a></button>
 								</header>
 							</section>
-
 					</div>
         );
     }
