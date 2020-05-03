@@ -23,7 +23,7 @@ class Contact extends Component {
         success: function() {
           // Redirect to another success page
           $("#contactform").slideUp();
-          $("#after").prepend("<p>Sucess! The form has been submitted.</p><br><button><a onClick={this._handleClick}>Click here to go back</a></button>");
+          $("#after").prepend("<p>Sucess! The form has been submitted.</p><br>");
         } 
       })
   }
@@ -62,7 +62,10 @@ class Contact extends Component {
             </p>
             </div>
           </form>
+          <div id="main">
           <p id="after"></p>
+          <button><a id="afterhref" style={{ "borderBottom" : "none" }} onClick={this._handleClick}>Click here to go back</a></button>
+          </div>
         </div>
       </div>
     );
