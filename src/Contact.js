@@ -67,7 +67,7 @@ class Contact extends Component {
           <button><a id="afterhref" style={{ "borderBottom" : "none" }} onClick={this._handleClick}>Click here to go back</a></button>
           </div>
         </div>
-      </div>
+      </div> 
     );
   }
 }
