@@ -59,7 +59,7 @@ class Contact extends Component {
                 <input name="button" type="submit" className="button" id="submit" value="Submit" />
                 
               </label>
-            </p>
+            </p> 
             </div>
           </form>
           <div id="main">
