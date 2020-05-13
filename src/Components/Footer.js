@@ -16,7 +16,7 @@ class Footer extends Component {
 								<li><a href="https://www.twitter.com/_rajasgandhi" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
 								<li><a href="https://www.facebook.com/rajas.gandhi.77" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
 								<li><a href="https://www.instagram.com/_rajasgandhi/" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-								<li><a href="https://www.github.com/nsgamezz" className="icon fa-github"><span className="label">GitHub</span></a></li>
+								<li><a href="https://www.github.com/rajasgandhi" className="icon fa-github"><span className="label">GitHub</span></a></li>
 								<li><a href="https://www.linkedin.com/in/rajas-gandhi-2134101a7/" className="icon fa-linkedin"><span className="label">LinkedIn</span></a></li>
 							</ul>
 
