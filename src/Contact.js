@@ -17,7 +17,7 @@ class Contact extends Component {
   _handleSubmit(e) {
     e.preventDefault();
       $.ajax({
-        url: "https://hooks.zapier.com/hooks/catch/7397875/orm82gb/",
+        url: "https://maker.ifttt.com/trigger/contactform/with/key/jS038mWaTa8GivrcxI6MIydQhkTMaFQe9zfQeEjarZlgb/",
         type: 'POST',
         data: $("#contactform").serialize(),
         success: function() {
@@ -33,13 +33,8 @@ class Contact extends Component {
         <div id="wrapper">
           <form name="contactform" id="contactform" onSubmit={this._handleSubmit}>
             <p>
-              <label>First Name:<br />
-                <input name="firstname" type="text" id="entry.22815847" size="30" required />
-              </label>
-            </p>
-            <p>
-              <label>Last Name:<br />
-                <input name="lastname" type="text" id="entry.2098725634" size="30" required />
+              <label>Name:<br />
+                <input name="name" type="text" id="entry.22815847" size="30" required />
               </label>
             </p>
             <p>
