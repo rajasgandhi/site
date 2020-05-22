@@ -17,7 +17,7 @@ class Contact extends Component {
   _handleSubmit(e) {
     e.preventDefault();
       $.ajax({
-        url: "https://maker.ifttt.com/trigger/contactform/with/key/jS038mWaTa8GivrcxI6MIydQhkTMaFQe9zfQeEjarZlgb/",
+        url: "https://maker.ifttt.com/trigger/contactform/with/key/jS038mWaTa8GivrcxI6MIydQhkTMaFQe9zfQeEjarZl/",
         type: 'POST',
         data: $("#contactform").serialize(),
         success: function() {
@@ -50,9 +50,7 @@ class Contact extends Component {
             <div id="main">
             <p>
               <label>
-                
                 <input name="button" type="submit" className="button" id="submit" value="Submit" />
-                
               </label>
             </p> 
             </div>
