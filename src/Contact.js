@@ -24,7 +24,7 @@ class Contact extends Component {
     e.preventDefault();
       Axios({
         method: "POST",
-        url: "./sendform.php",
+        url: `${process.env.REACT_APP_API}`,
         headers: {"content-type":"application/json"},
         data: this.state
       }).then((response)=>{
