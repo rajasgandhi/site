@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
 import me from '../images/me.png'
 class Main extends Component {
+	constructor(props) {
+		super(props);
+		this._handleClick = this._handleClick.bind(this);
+	}
+	
+	_handleClick(e) {
+		e.preventDefault();
+		window.location.href="/contact";
+	}
     render() {
         return(
             <div id="main">
@@ -39,17 +48,17 @@ class Main extends Component {
 										<p>With the world getting closer together online, sometimes we want to get away from the tracking. This <a href="https://techyx.herokuapp.com">proxy</a> allows you to do just that.</p>
 									</li>
 									<li>
-										<span className="icon major style5 fa-bus"></span>
-										<h3>Bytecurve</h3>
-										<p>I have helped the company, <a href="https://bytecurve.com" target="top">Bytecurve</a>, with developing their app for school bus drivers. Bytecurve is the company that manages the bussing system of one of the biggest school districts in Illinois, USA.</p>
+										<span className="icon major style5 fa-link"></span>
+										<h3>URL Email Scraper</h3>
+										<p>I created a tool that is helpful for generating leads for marketing agencies <span>&#40;</span>or anyone, for that matter <span>&#41;</span>. This tool takes in url<span>&#40;</span>s<span>&#41;</span> and then returns a JSON-formatted list of all emails found on that url. You can check it out <a href="http://urlemailscraper.herokuapp.com">here</a>. There is also an API that is available.</p>
 									</li>
 									<li>
 										<span className="icon major style5 fa-code"></span>
-										<h3>Hackathon</h3>
-										<p>I attended a hackathon, <a href="https://windyhacks.com" target="top">Windy City Hacks</a>, in 2019. At this hackathon, although I didn't win anything, I learned many valuable lessons from many industry-leading experts that I have used in other projects of mine.</p>
+										<h3>Hackathons</h3>
+										<p>I attended a hackathon, <a href="https://windyhacks.com">Windy City Hacks</a>, in 2019. At this hackathon, although I didn't win anything, I learned many valuable lessons from many industry-leading experts that I have used in other projects of mine.</p>
 									</li>
 									<li>
-										<span className="icon major style5 fa-dsf"></span>
+										<span className="icon major style5 fa-bar-chart"></span>
 										<h3>Gradescraper</h3>
 										<p>I recently made a program in python and deployed it via Flask to the web that when I login to the site, it would scrape my grades in school and display them. You can see this project <a href="https://www.gradescraper.herokuapp.com">here</a>.</p>
 									</li>
@@ -109,7 +118,7 @@ class Main extends Component {
 									Feel free to contact me if you are looking for project help and you think I could<br />
 									help you. Contact info is listed below.</p>
 									<p>Or press the button below.</p>
-									<button><a style={{"borderBottom" : "none"}} href="/contact">Contact Me</a></button>
+									<button onClick={this._handleClick}>Contact Me</button>
 								</header>
 							</section>
 					</div>

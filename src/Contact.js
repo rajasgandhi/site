@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
+import Axios from 'axios';
 
 class Contact extends Component {
 
@@ -7,44 +8,56 @@ class Contact extends Component {
     super(props);
     this._handleSubmit = this._handleSubmit.bind(this);
     this._handleClick = this._handleClick.bind(this);
+    this.state = {
+      name: '',
+      email: '',
+      message: '',
+    }
   }
 
-  _handleClick(e) {
+  handleClick(e) {
     e.preventDefault();
     window.location.href="/";
   }
 
-  _handleSubmit(e) {
+  handleSubmit(e) {
     e.preventDefault();
-      $.ajax({
-        url: "https://maker.ifttt.com/trigger/contactform/with/key/jS038mWaTa8GivrcxI6MIydQhkTMaFQe9zfQeEjarZl/",
-        type: 'POST',
-        data: $("#contactform").serialize(),
-        success: function() {
-          // Redirect to another success page
-          $("#contactform").slideUp();
-          $("#after").prepend("<p>Sucess! The form has been submitted.</p><br>");
-        } 
+      Axios({
+        method: "POST",
+        url: "./sendform.php",
+        headers: {"content-type":"application/json"},
+        data: this.state
+      }).then((response)=>{
+        if (response.data.status === 'success'){
+          alert("Message Sent."); 
+          this.resetForm()
+        }else if(response.data.status === 'fail'){
+          alert("Message failed to send.")
+        }
       })
   }
+
+  resetForm(){  
+    this.setState({name: '', email: '', message: ''})
+ }
   render() {
     return (
       <div>
         <div id="wrapper">
-          <form name="contactform" id="contactform" onSubmit={this._handleSubmit}>
+          <form name="contactform" id="contactform" onSubmit={this.handleSubmit} method="POST">
             <p>
               <label>Name:<br />
-                <input name="name" type="text" id="entry.22815847" size="30" required />
+                <input name="name" type="text" id="entry.22815847" size="30" value={this.state.name} onChange={this.onNameChange.bind(this)} required />
               </label>
             </p>
             <p>
               <label>Email:<br />
-                <input name="email" type="email" id="entry.546969202" size="48" required />
+                <input name="email" type="email" id="entry.546969202" size="48" value={this.state.email} onChange={this.onEmailChange.bind(this)} required />
               </label>
             </p>
             <p>
               <label>Message:<br />
-                <textarea name="message" id="entry.82328721" cols="50" rows="7" required></textarea>
+                <textarea name="message" id="entry.82328721" cols="50" rows="7" value={this.state.message} onChange={this.onMessageChange.bind(this)} required></textarea>
               </label>
             </p>
             <div id="main">
@@ -57,11 +70,22 @@ class Contact extends Component {
           </form>
           <div id="main">
           <p id="after"></p>
-          <button><a id="afterhref" style={{ "borderBottom" : "none" }} onClick={this._handleClick}>Click here to go back</a></button>
+          <button onClick={this.handleClick}>Click here to go back</button>
           </div>
         </div>
       </div> 
     );
+  }
+  onNameChange(event) {
+    this.setState({name: event.target.value})
+  }
+
+  onEmailChange(event) {
+    this.setState({email: event.target.value})
+  }
+    
+  onMessageChange(event) {
+    this.setState({message: event.target.value})
   }
 }
 
