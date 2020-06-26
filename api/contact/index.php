@@ -1,6 +1,6 @@
 <?php
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Headers: Content-Type");
+header("access-control-allow-origin: *");
+header("access-control-allow-headers: content-type");
 
 $rest_json = file_get_contents("php://input");
 $_POST = json_decode($rest_json, true);
