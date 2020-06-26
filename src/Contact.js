@@ -6,8 +6,8 @@ class Contact extends Component {
 
   constructor(props) {
     super(props);
-    this._handleSubmit = this._handleSubmit.bind(this);
-    this._handleClick = this._handleClick.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleClick = this.handleClick.bind(this);
     this.state = {
       name: '',
       email: '',
