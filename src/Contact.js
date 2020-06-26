@@ -25,7 +25,7 @@ class Contact extends Component {
       Axios({
         method: "POST",
         url: `${process.env.REACT_APP_API}`,
-        headers: {"content-type":"application/json"},
+        headers: {"content-type":"application/json","Access-Control-Allow-Origin":"*"},
         data: this.state
       }).then((response)=>{
         if (response.data.status === 'success'){
