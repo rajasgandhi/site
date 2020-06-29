@@ -25,7 +25,7 @@ class Contact extends Component {
       Axios({
         method: "POST",
         headers: {"content-type":"application/json","Access-Control-Allow-Origin":"*"},
-        url: `${process.env.REACT_APP_API}`,
+        url: "https://maker.ifttt.com/trigger/ContactForm/with/key/l-IHh5Npf_1RyG9zyvEr6DOjoQMghC7fyX_w6BmHDUu?value1=" + this.state,
         data: this.state
       }).then((response)=>{
         if (response.data.status === 'success'){
