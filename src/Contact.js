@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
-import Axios from 'axios';
 
 class Contact extends Component {
 
@@ -8,6 +7,7 @@ class Contact extends Component {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleClick = this.handleClick.bind(this);
+    this.resetForm = this.resetForm.bind(this);
     this.state = {
       name: '',
       email: '',
@@ -20,26 +20,33 @@ class Contact extends Component {
     window.location.href="/";
   }
 
+  resetForm(){  
+    this.setState({name: '', email: '', message: ''})
+ }
+
   handleSubmit(e) {
     e.preventDefault();
-      Axios({
-        method: "POST",
-        headers: {"content-type":"application/json","Access-Control-Allow-Origin":"*"},
-        url: "https://maker.ifttt.com/trigger/ContactForm/with/key/l-IHh5Npf_1RyG9zyvEr6DOjoQMghC7fyX_w6BmHDUu?value1=" + this.state,
-        data: this.state
-      }).then((response)=>{
-        if (response.data.status === 'success'){
-          alert("Message Sent."); 
-          this.resetForm()
-        }else if(response.data.status === 'fail'){
-          alert("Message failed to send.")
+    $.ajax({
+        url: "https://discord.com/api/webhooks/727246918782025759/_UMG5622vvd9F5UmbmE-nldG2Kour1uGJZmVhMXugYHPMJSKjyZXGhb9qz0JijxXtkCu",
+        dataType: "json",
+        type: "POST",
+        headers: {"Content-Type" : "application/json"},
+        data: JSON.stringify({
+          "username" : "ContactForm",
+          "avatar_url" : "",
+          "content" : JSON.stringify(this.state)
+        }),
+        success: function (result, status, xhr) {
+          console.log(result);
+          //this.resetForm();
+        },
+        error: function (xhr, status, error) {
+          console.log("Result: " + status + " " + error + " " + xhr.status + " " + xhr.statusText)
         }
       })
   }
 
-  resetForm(){  
-    this.setState({name: '', email: '', message: ''})
- }
+
   render() {
     return (
       <div>
