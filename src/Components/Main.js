@@ -8,7 +8,7 @@ class Main extends Component {
 	
 	_handleClick(e) {
 		e.preventDefault();
-		window.location.href="/contact";
+		window.location.href="/contact-me";
 	}
     render() {
         return(

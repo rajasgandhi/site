@@ -7,7 +7,6 @@ class Contact extends Component {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleClick = this.handleClick.bind(this);
-    this.resetForm = this.resetForm.bind(this);
     this.state = {
       name: '',
       email: '',
@@ -20,9 +19,15 @@ class Contact extends Component {
     window.location.href="/";
   }
 
-  resetForm(){  
-    this.setState({name: '', email: '', message: ''})
+  handleSuccess() { 
+    this.setState({name: '', email: '', message: ''});
+    $('#after').text("Success! Message Sent");
+    $('#contactform').slideUp();
  }
+
+  handleError() {
+    $('#after').text("Error: Please try again");
+  }
 
   handleSubmit(e) {
     e.preventDefault();
@@ -36,13 +41,15 @@ class Contact extends Component {
           "avatar_url" : "",
           "content" : JSON.stringify(this.state)
         }),
-        success: function (result, status, xhr) {
-          console.log(result);
-          //this.resetForm();
-        },
-        error: function (xhr, status, error) {
+        /*success: function (xhr, status, error) {
+          console.log(xhr + status);
+        },*/
+        success: this.handleSuccess()
+        /*error: function (xhr, status, error) {
           console.log("Result: " + status + " " + error + " " + xhr.status + " " + xhr.statusText)
-        }
+        }*/
+      }).fail(function (){
+        this.handleError()
       })
   }
 
