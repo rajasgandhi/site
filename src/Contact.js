@@ -3,6 +3,10 @@ import $ from 'jquery';
 
 class Contact extends Component {
 
+  componentDidMount() {
+    document.title = "Contact Me | Rajas Gandhi";
+  }
+
   constructor(props) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);

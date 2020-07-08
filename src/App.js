@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Home from './Home';
 import Contact from './Contact';
-import { Switch, Route } from 'react-router-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
 class App extends Component {
   render() {

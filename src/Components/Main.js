@@ -17,9 +17,9 @@ class Main extends Component {
 								<div className="spotlight">
 									<div className="content">
 										<header className="major">
-											<h2>About Me</h2>
+											<h2 style={{"fontFamily" : "Nunito, Source Sans Pro, sans-serif"}}>About Me</h2>
 										</header>
-										<p>I am a student in Aurora Illinois, interested in computer science and using it to help better the world. You can find out more about what I have done below.</p>
+										<p style={{"fontFamily" : "Nunito, Source Sans Pro, sans-serif"}}>I am a student in Aurora Illinois, interested in computer science and using it to help better the world. You can find out more about what I have done below.</p>
 
 									</div>
 									<span className="image"><img src={me} alt="me" /></span>
