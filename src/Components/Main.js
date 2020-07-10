@@ -45,12 +45,12 @@ class Main extends Component {
 									<li>
 										<span className="icon major style5 fa-server"></span>
 										<h3>Proxy</h3>
-										<p>With the world getting closer together online, sometimes we want to get away from the tracking. This <a href="https://techyx.herokuapp.com">proxy</a> allows you to do just that.</p>
+										<p>With the world getting closer together online, sometimes we want to get away from the tracking. This <a href="https://techyz.herokuapp.com">proxy</a> allows you to do just that.</p>
 									</li>
 									<li>
 										<span className="icon major style5 fa-link"></span>
 										<h3>URL Email Scraper</h3>
-										<p>I created a tool that is helpful for generating leads for marketing agencies <span>&#40;</span>or anyone, for that matter <span>&#41;</span>. This tool takes in url<span>&#40;</span>s<span>&#41;</span> and then returns a JSON-formatted list of all emails found on that url. You can check it out <a href="http://urlemailscraper.herokuapp.com">here</a>. There is also an API that is available.</p>
+										<p>I created a tool that is helpful for generating leads for marketing agencies <span>&#40;</span>or anyone, for that matter <span>&#41;</span>. This tool takes in url<span>&#40;</span>s<span>&#41;</span> and then returns a JSON-formatted list of all emails found on that url. You can check it out <a href="http://findemails.herokuapp.com">here</a>. There is also an API that is available.</p>
 									</li>
 									<li>
 										<span className="icon major style5 fa-code"></span>
